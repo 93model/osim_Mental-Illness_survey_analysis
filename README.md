@@ -38,10 +38,31 @@ OSMI : 개발자 중심의 정신 질환 연구 및 조사 단체
 | physhealthinterview     | 면접에서 회사에게 신체 건강 문제를 이야기하시겠습니까?                         |
 | mentalvsphysical        | 회사가 정신 건강을 신체 건강만큼 중요하게 생각한다고 생각하십니까?                  |
 | obs\_consequence        | 직장에서 정신 건강 문제가 있는 동료에 대한 부정적인 결과에 대해 듣거나 관찰한 적이 있습니까?  |
-| comments                | 추가적 사항 
+| comments                | 추가적 사항 |
+
+- 다양한 성별 결과( Male, Female, Others 로 줄임)
+- 국적을 대륙별로 구분
+- 연령 대 Feature 을 추가( 0-20, 21-30, 31-65, 66~ )
+
+- Feature Importance 결과,work_interfere 변수의 영향력 너무 크게 나타남 -> 삭제
+
+
+## 🛠 한계
+데이터의 절대적 수가 부족 OSMI Mental Health in Tech Survey : 약 1200개 
+미국 중심 : 정신 질환에 대한 개방 정도가 한국과 다름
+스스로 실시한 설문조사 : 정신 질환에 관심이 있어서  찾아온 사람들, 치료 비율 높음
+
 ## ✔️ 결과
+머신러닝 방식 적용 ![image](https://user-images.githubusercontent.com/48009811/179451535-b0b97d40-a943-4253-ab84-a57716e8fe22.png)
+RandomForest  + RandomizedSearchCV 사용
+ 하이퍼 파라미터의 최적값 적용. 
+ 적은 데이터의 개수를 극복하기 위해  n_iter=20,  cv=10,사용
+최적의 임계값 찾기 idx: 34 , threshold: 0.5542227788687464
+![캡처](/img/f1_score.PNG)
 
+## 🔍 결과 
+관측치를 예측하는 특성
+![캡처](/img/feature_importance.PNG)
 
-## 🔍 현황
-
-
+family_history (가족력)
+care_options ( 회사에서 제공하는 정신 건강 관리 옵션 )
