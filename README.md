@@ -2,7 +2,6 @@
 
 ## ❓ 데이터 소개
 OSMI : 개발자 중심의 정신 질환 연구 및 조사 단체
-![image](https://user-images.githubusercontent.com/48009811/179446356-433cf5c7-1d3c-46cd-b94c-3f777efaa4cb.png)
 
 ## 🛠 문제
 데이터 사이언티스트는 개발자 인가? 라는 의문에서 출발
@@ -53,11 +52,12 @@ OSMI : 개발자 중심의 정신 질환 연구 및 조사 단체
 스스로 실시한 설문조사 : 정신 질환에 관심이 있어서  찾아온 사람들, 치료 비율 높음
 
 ## ✔️ 결과
-머신러닝 방식 적용 ![image](https://user-images.githubusercontent.com/48009811/179451535-b0b97d40-a943-4253-ab84-a57716e8fe22.png)
+머신러닝 방식 적용 !
 RandomForest  + RandomizedSearchCV 사용
- 하이퍼 파라미터의 최적값 적용. 
- 적은 데이터의 개수를 극복하기 위해  n_iter=20,  cv=10,사용
+하이퍼 파라미터의 최적값 적용. 
+적은 데이터의 개수를 극복하기 위해  n_iter=20,  cv=10,사용
 최적의 임계값 찾기 idx: 34 , threshold: 0.5542227788687464
+
 ![캡처](/img/f1_score.PNG)
 
 ## 🔍 결과 
