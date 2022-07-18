@@ -6,7 +6,7 @@ OSMI : 개발자 중심의 정신 질환 연구 및 조사 단체
 ## 🛠 문제
 데이터 사이언티스트는 개발자 인가? 라는 의문에서 출발
 
-###직장의 요인과 관련한 정신질환 정신 질환 치료 경험 (Yes , No) 분류 문제
+### 직장의 요인과 관련한 정신질환 정신 질환 치료 경험 (Yes , No) 분류 문제 
 
 ## 🧹 데이터 전처리
 ### feature
@@ -58,11 +58,11 @@ RandomForest  + RandomizedSearchCV 사용
 적은 데이터의 개수를 극복하기 위해  n_iter=20,  cv=10,사용
 최적의 임계값 찾기 idx: 34 , threshold: 0.5542227788687464
 
-![캡처](/img/f1_score.PNG)
+![캡처](/img/f1_score.png)
 
 ## 🔍 결과 
 관측치를 예측하는 특성
-![캡처](/img/feature_importance.PNG)
+![캡처](/img/feature_importance.png)
  
 family_history (가족력)
 care_options ( 회사에서 제공하는 정신 건강 관리 옵션 )
