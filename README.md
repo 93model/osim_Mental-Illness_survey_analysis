@@ -63,6 +63,6 @@ RandomForest  + RandomizedSearchCV 사용
 ## 🔍 결과 
 관측치를 예측하는 특성
 ![캡처](/img/feature_importance.PNG)
-
+ 
 family_history (가족력)
 care_options ( 회사에서 제공하는 정신 건강 관리 옵션 )
